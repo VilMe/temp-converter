@@ -43,7 +43,12 @@ while True:
 
     # Convert the temperature and print the result
     result = convert_temperature(value, input_scale, output_scale)
-    print(f'{value} {input_scale} = {result} {output_scale}')
+    # print(f'{value} {input_scale} = {result} {output_scale}')
+    print(value)
+    print(result)
+    print(input_scale)
+    print(output_scale)
+
 
     # Prompt the user to continue or quit
     print('Enter q to quit, or any other key to continue:')
