@@ -31,3 +31,22 @@ def convert_temperature(value, input_scale, output_scale):
             return value
     else:
         return value
+
+while True:
+    # Prompt the user for input
+    print('Enter the input temperature value:')
+    value = float(input())
+    print('Enter the input temperature scale (C, F, or K):')
+    input_scale = input().upper()
+    print('Enter the output temperature scale (C, F, or K):')
+    output_scale = input().upper()
+
+    # Convert the temperature and print the result
+    result = convert_temperature(value, input_scale, output_scale)
+    print(f'{value} {input_scale} = {result} {output_scale}')
+
+    # Prompt the user to continue or quit
+    print('Enter q to quit, or any other key to continue:')
+    choice = input()
+    if choice.lower() == 'q':
+        break
