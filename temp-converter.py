@@ -22,3 +22,12 @@ def convert_temperature(value, input_scale, output_scale):
             return (value + 459.67) * 5 / 9
         else:
             return value
+    elif input_scale == 'K':
+        if output_scale == 'C':
+            return value - 273.15
+        elif output_scale == 'F':
+            return value * 9 / 5 - 459.67
+        else:
+            return value
+    else:
+        return value
